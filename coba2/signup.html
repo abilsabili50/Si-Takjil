@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				background-image: url(https://s-media-cache-ak0.pinimg.com/originals/51/ed/c0/51edc046eb80046ee4755ee71d0f19ca.jpg);
+				margin: 0;
+				padding: 0;
+				align-items: center;
+				position: relative;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			/* Add padding to containers */
+			.container {
+				/* position: absolute;
+				top: 50%;
+				left: 50%; */
+				/* transform: translate(-50%, -50%); */
+				margin: 0;
+				padding: 16px;
+				background-color: white;
+				width: 60vmax;
+				border-radius: 2%;
+			}
+
+			/* Full-width input fields */
+			input[type="text"],
+			input[type="password"] {
+				width: 100%;
+				padding: 15px;
+				margin: 5px 0 22px 0;
+				display: inline-block;
+				border: none;
+				background: #f1f1f1;
+			}
+
+			input[type="text"]:focus,
+			input[type="password"]:focus {
+				background-color: #ddd;
+				outline: none;
+			}
+
+			/* Overwrite default styles of hr */
+			hr {
+				border: 1px solid #f1f1f1;
+				margin-bottom: 25px;
+			}
+
+			/* Set a style for the submit button */
+			.registerbtn {
+				background-color: #d7e0e7;
+				color: #182127;
+				padding: 16px 20px;
+				margin: 8px 0;
+				border: none;
+				cursor: pointer;
+				width: 100%;
+				opacity: 0.6;
+			}
+
+			.registerbtn:hover {
+				opacity: 1;
+			}
+
+			/* Add a blue text color to links */
+			a {
+				color: dodgerblue;
+			}
+
+			.signin {
+				text-align: center;
+			}
+
+			/* Add Zoom Animation */
+			.animate {
+				-webkit-animation: animatezoom 0.6s;
+				animation: animatezoom 0.6s;
+			}
+
+			@-webkit-keyframes animatezoom {
+				from {
+					-webkit-transform: scale(0);
+				}
+				to {
+					-webkit-transform: scale(1);
+				}
+			}
+
+			@keyframes animatezoom {
+				from {
+					transform: scale(0);
+				}
+				to {
+					transform: scale(1);
+				}
+			}
+
+			/* Change styles for span and cancel button on extra small screens */
+			@media screen and (max-width: 300px) {
+				span.psw {
+					display: block;
+					float: none;
+				}
+				.cancelbtn {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<div class="container">
+				<h1>Register</h1>
+				<p>Please fill in this form to create an account.</p>
+				<hr />
+
+				<label for="email"><b>Email</b></label>
+				<input
+					type="text"
+					placeholder="Enter Email"
+					name="email"
+					id="email"
+					required
+				/>
+
+				<label for="psw"><b>Password</b></label>
+				<input
+					type="password"
+					placeholder="Enter Password"
+					name="psw"
+					id="psw"
+					required
+				/>
+
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input
+					type="password"
+					placeholder="Repeat Password"
+					name="psw-repeat"
+					id="psw-repeat"
+					required
+				/>
+				<hr />
+
+				<button type="submit" class="registerbtn">Register</button>
+				<div class="signin">
+					<p>
+						Already have an account?
+						<span
+							style="color: blue; text-decoration: underline; cursor: pointer"
+							onclick="document.getElementById('id01').style.display = 'block';"
+							>Sign In</span
+						>.
+					</p>
+				</div>
+			</div>
+		</form>
+
+		<script></script>
+	</body>
+</html>

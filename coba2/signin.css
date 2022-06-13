@@ -1,0 +1,111 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f3ebf6;
+	font-family: "Ubuntu", sans-serif;
+}
+
+.cont {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/51/ed/c0/51edc046eb80046ee4755ee71d0f19ca.jpg);
+}
+
+.main {
+	align-items: center;
+	background-color: #ffffff;
+	width: 45vmax;
+	margin: 5em auto;
+	border-radius: 1.5em;
+	box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+	text-align: center;
+}
+
+.sign {
+	padding-top: 40px;
+	color: #7a9df1;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.inp {
+	width: 80%;
+	margin: auto;
+	color: rgb(38, 50, 56);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+}
+
+.form1 > * {
+	margin-bottom: 30px;
+}
+
+form.form1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 40px;
+}
+
+.inp:focus {
+	border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+.submit {
+	cursor: pointer;
+	border-radius: 5em;
+	color: #fff;
+	background: linear-gradient(to right, #273cb0, #40a1fb);
+	border: 0;
+	padding: 10px 40px;
+	font-family: "Ubuntu", sans-serif;
+	margin: auto;
+	font-size: 13px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+	transition: all 1s;
+}
+
+.submit:hover {
+	background: linear-gradient(to right, #4088fb, #273cb0);
+}
+
+.reg {
+	text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+	color: #7a9df1;
+	padding-top: 15px;
+}
+.reg #regist {
+	text-decoration: underline;
+	font-weight: 500;
+	cursor: pointer;
+	color: #667dff;
+}
+
+.regis #regist:hover {
+	color: #8787b9;
+}
+
+a {
+	text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+	color: #e1bee7;
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	.main {
+		border-radius: 0px;
+	}
+}
